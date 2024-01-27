@@ -17,42 +17,38 @@
         <img class="logo" src="assets/images/logo.png" alt="" logo>Love Maths
     </h1>
 
-    <div class="game-area"></div>
-    <div class="controls-area">
-        <button data-type="addition" class="btn btn -- btn btn--green">
-            <i class="fas fa-plus"></i>
-        </button>
+    <div class="game-area">
+        <div class="controls-area">
+            <button class="btn btn--big btn--green">
+                <i class="fas fa-plus"></i>
+            </button>
+            <button class="btn btn--big btn--blue">
+                <i class="fas fa-minus"></i>
+            </button>
+            <button class="btn btn--big btn--orange">
+                <i class="fas fa-times"></i>
+            </button>
+            <button class="btn btn--big btn--red">
+                <i class="fas fa-divide"></i>
+            </button>
+        </div>
 
-        <button data-type="subtract" class="btn btn -- btn btn--blue">
-            <i class="fas fa-minus"></i>
-        </button>
+        <div class="question area">
+            <span id="operand1">0</span>
+            <span id="operator">x</span>
+            <span id="operand2">0</span>
+            <span>=</span>
+            <p class="awnser-message">Enter Answer:</p>
+            <input type="awnser=box" type="number">
+        </div>
+        <button data-type="submit" class="btn btn--gray">Submit Answer:</button>
 
-        <button data-type="multiply" class="btn btn -- btn btn--orange">
-            <i class="fas fa-times"></i>
-        </button>
+        <div class="score-area">
+            <p class="scores"> Correct Answers <span id="score">0</span></p>
+            <p class="scores"> Wrong Answers <span id="incorrect">0</span></p>
+        </div>
 
-        <button data-type="division" class="btn btn -- btn btn--red">
-            <i class="fas fa-divide"></i>
-        </button>
-
-    </div>
-
-    <div class ="question area">
-        <span id="operand1">0</span>
-        <span id="operator">x</span>
-        <span id ="operand2">0</span>
-        <span>=</span>
-        <p class="awnser-message">Enter Answer:</p>
-        <input type="awnser=box" type="number">
-    </div>
-    <button data-type="submit" class="btn btn--gray">Submit Answer:</button>
-
-    <div class="score-area">
-        <p class="scores"> Correct Answers <span id="score">0</span></p>
-        <p class="scores"> Wrong Answers <span id="incorrect">0</span></p>
-    </div>
-
-    <script src="assets/js/script.js"></script>
+        <script src="assets/js/script.js"></script>
 </body>
 
 </html>
